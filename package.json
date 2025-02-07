@@ -9,5 +9,25 @@
       "apps/*",
       "libs/*"
     ]
+  },
+  "nohoist": [
+    "**/@nestjs",
+    "**/@nestjs/**"
+  ],
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "nx": "20.4.1",
+    "husky": "^8.0.0"
+  },
+  "scripts": {
+    "format": "prettier --write \"{apps,libs,standalone}/**/*.{ts,js,json,html,scss,css,md}\" --ignore-path .gitignore",
+    "format:check": "yarn format --check",
+    "format:write": "yarn format --write",
+    "tsc": "yarn nx run-many -t tsc",
+    "lint": "yarn nx run-many -t lint",
+    "validate": "yarn format:write && yarn lint && yarn tsc",
+    "build": "yarn nx run-many -t build",
+    "total": "yarn nx run-many -t validate, build",
+    "prepare": "husky install"
   }
 }

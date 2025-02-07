@@ -4,3 +4,8 @@ node_modules
  .next
  .env
  .gitignore
+
+
+
+.nx/cache
+.nx/workspace-data
