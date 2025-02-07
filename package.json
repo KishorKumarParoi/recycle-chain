@@ -1,0 +1,13 @@
+{
+  "name": "recycle-chain",
+  "version": "1.0.0",
+  "author": "Kishor Paroi",
+  "private": true,
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "libs/*"
+    ]
+  }
+}
