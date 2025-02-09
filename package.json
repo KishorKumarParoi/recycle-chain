@@ -25,8 +25,8 @@
     "format:write": "yarn format --write",
     "tsc": "yarn nx run-many -t tsc",
     "lint": "yarn nx run-many -t lint",
-    "validate": "yarn format:write && yarn lint && yarn tsc",
     "build": "yarn nx run-many -t build",
+    "validate": "yarn format:write && yarn lint && yarn tsc",
     "total": "yarn nx run-many -t validate, build",
     "prepare": "husky install"
   }
