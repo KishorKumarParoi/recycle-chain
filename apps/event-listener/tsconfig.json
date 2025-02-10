@@ -1,0 +1,12 @@
+// filepath: /Users/kishorkumarparoi/job-project/recycle-chain/apps/event-listener/tsconfig.json
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["index.ts"]
+}
