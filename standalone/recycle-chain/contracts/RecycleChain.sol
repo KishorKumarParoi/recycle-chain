@@ -23,7 +23,7 @@ contract RecycleChain {
         uint256 id;
         string name;
         uint256 quantity;
-        ToxicItem[] toxicItems;
+        // ToxicItem[] toxicItems;
         address manufacturer;       
     }
 }
